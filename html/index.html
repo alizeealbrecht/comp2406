@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Songs Server</title>
+
+    <script src="js/song-parser.js" ></script>
+
+    <script type="text/javascript">
+
+        var http_request = new XMLHttpRequest();
+
+        function makeRequest() {
+            http_request.onreadystatechange = handleCheckboxRequest;
+            http_request.open( 'GET', '/songs/sister_golden_hair.txt', true );
+            http_request.send( null );
+        }
+
+        function handleCheckboxRequest() {
+            if ( http_request.readyState == 4 && http_request.status == 200 ) {
+                document.getElementById( 'test' ).innerHTML = parseSong( http_request.responseText );
+            }
+        }
+    </script>
+</head>
+<body>
+
+<br>Server working on port 3000 </br>
+
+<div class="top">
+    <a href="javascript:void(0)" onclick="makeRequest()">Click Here</a>
+    <pre><div id="test">Sister Golden Hair</div></pre>
+</div>
+
+</body>
+</html>
