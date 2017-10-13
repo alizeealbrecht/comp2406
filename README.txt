@@ -19,6 +19,4 @@ Run instructions :
 
 N.B. This assignment was not at all appropriate for a FUNDAMENTALS class on web apps. 
 Maybe for people who like it, have done it before, are in the web stream, or have a million hours
-to dedicate to this class; maybe those people found it fair. Not the majority of the students that 
-I talk to every week in tutorials and study groups - and not according to my tutor that I had to get due to
-lack of teaching. 
+to dedicate to this class; maybe those people found it fair. 
