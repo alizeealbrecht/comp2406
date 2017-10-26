@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSockets Example</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<h1>Hello <span id="user-name">User</span>!</h1>
+<div id="chat-box"></div>
+<form id="message-form">
+    <label class="message-input">
+        <span>Message:</span>
+        <input type="text">
+    </label>
+    <button type="submit">Send Message</button>
+</form>
+
+<!--suppress HtmlUnknownTarget -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="assets/websockets-chat.js"></script>
+</body>
+</html>

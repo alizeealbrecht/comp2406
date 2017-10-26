@@ -1,0 +1,11 @@
+#chat-box {
+    width: 300px;
+    border: 1px solid #000;
+    height: 300px;
+    overflow: auto;
+}
+
+.message-input {
+    display: inline-block;
+    margin-top: 20px;
+}
